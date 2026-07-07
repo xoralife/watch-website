@@ -31,3 +31,6 @@ next-env.d.ts
 
 # command code
 .commandcode
+
+# temp
+commit_msg.txt
