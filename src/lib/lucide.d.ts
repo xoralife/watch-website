@@ -47,4 +47,5 @@ declare module "lucide-react" {
   export const TrendingUp: FC<SVGProps<SVGSVGElement>>;
   export const Eye: FC<SVGProps<SVGSVGElement>>;
   export const Calendar: FC<SVGProps<SVGSVGElement>>;
+  export const Sparkles: FC<SVGProps<SVGSVGElement>>;
 }
