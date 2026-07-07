@@ -24,4 +24,12 @@ declare module "lucide-react" {
   export const Instagram: FC<SVGProps<SVGSVGElement>>;
   export const Youtube: FC<SVGProps<SVGSVGElement>>;
   export const SlidersHorizontal: FC<SVGProps<SVGSVGElement>>;
+  export const Award: FC<SVGProps<SVGSVGElement>>;
+  export const Users: FC<SVGProps<SVGSVGElement>>;
+  export const Gem: FC<SVGProps<SVGSVGElement>>;
+  export const Globe: FC<SVGProps<SVGSVGElement>>;
+  export const Mail: FC<SVGProps<SVGSVGElement>>;
+  export const Phone: FC<SVGProps<SVGSVGElement>>;
+  export const MapPin: FC<SVGProps<SVGSVGElement>>;
+  export const Send: FC<SVGProps<SVGSVGElement>>;
 }

@@ -1,8 +1,7 @@
-feat: add home page and product detail page
+feat: add About and Contact pages
 
-- Home page composed of Hero, Features, FeaturedProducts, Stats, Testimonials
-- Product detail with image gallery, specs, features, reviews, related products
-- Add to cart animation with success feedback
-- Breadcrumb navigation and product badges
+- About page with brand story, values cards, timeline, and CTA
+- Contact page with contact info cards and form
+- Added missing lucide-react icon type declarations
 
 Co-authored-by: CommandCodeBot <noreply@commandcode.ai>
