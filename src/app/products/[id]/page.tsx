@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -18,6 +18,7 @@ import { products } from "@/data/products";
 import { useCart } from "@/components/CartProvider";
 import ProductCard from "@/components/ProductCard";
 import ImageZoom from "@/components/ImageZoom";
+import RecentlyViewed from "@/components/RecentlyViewed";
 
 export default function ProductDetail() {
   const params = useParams();
@@ -25,6 +26,14 @@ export default function ProductDetail() {
   const { addItem } = useCart();
   const [selectedImage, setSelectedImage] = useState(0);
   const [addedToCart, setAddedToCart] = useState(false);
+
+  useEffect(() => {
+    if (product) {
+      const stored = JSON.parse(localStorage.getItem("recentlyViewed") || "[]");
+      const updated = [product.id, ...stored.filter((id: string) => id !== product.id)].slice(0, 8);
+      localStorage.setItem("recentlyViewed", JSON.stringify(updated));
+    }
+  }, [product]);
 
   if (!product) {
     return (
@@ -298,6 +307,8 @@ export default function ProductDetail() {
             </div>
           </section>
         )}
+
+        <RecentlyViewed />
       </div>
     </div>
   );
