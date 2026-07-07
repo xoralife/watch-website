@@ -19,6 +19,7 @@ import { useCart } from "@/components/CartProvider";
 import ProductCard from "@/components/ProductCard";
 import ImageZoom from "@/components/ImageZoom";
 import RecentlyViewed from "@/components/RecentlyViewed";
+import ImageLightbox from "@/components/ImageLightbox";
 
 export default function ProductDetail() {
   const params = useParams();
@@ -26,6 +27,7 @@ export default function ProductDetail() {
   const { addItem } = useCart();
   const [selectedImage, setSelectedImage] = useState(0);
   const [addedToCart, setAddedToCart] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   useEffect(() => {
     if (product) {
@@ -88,7 +90,7 @@ export default function ProductDetail() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative mb-4">
+            <div className="relative mb-4 cursor-pointer" onClick={() => setLightboxOpen(true)}>
               <ImageZoom
                 src={product.images[selectedImage]}
                 alt={product.name}
@@ -309,6 +311,15 @@ export default function ProductDetail() {
         )}
 
         <RecentlyViewed />
+
+        {/* Lightbox */}
+        {lightboxOpen && (
+          <ImageLightbox
+            images={product.images}
+            index={selectedImage}
+            onClose={() => setLightboxOpen(false)}
+          />
+        )}
       </div>
     </div>
   );
