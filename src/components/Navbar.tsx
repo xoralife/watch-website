@@ -66,6 +66,7 @@ export default function Navbar() {
 
             {/* Right Icons */}
             <div className="flex items-center gap-4">
+              <Link href="/search">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -73,6 +74,7 @@ export default function Navbar() {
               >
                 <Search className="w-5 h-5" />
               </motion.button>
+            </Link>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
