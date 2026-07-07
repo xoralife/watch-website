@@ -1,7 +1,7 @@
-feat: add About and Contact pages
+feat: add page transitions, scroll-to-top button, and polish
 
-- About page with brand story, values cards, timeline, and CTA
-- Contact page with contact info cards and form
-- Added missing lucide-react icon type declarations
+- PageTransition component with fade animation between routes
+- ScrollToTop button that appears on scroll
+- Integrated both into root layout
 
 Co-authored-by: CommandCodeBot <noreply@commandcode.ai>

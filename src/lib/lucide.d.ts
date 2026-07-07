@@ -17,6 +17,7 @@ declare module "lucide-react" {
   export const RotateCcw: FC<SVGProps<SVGSVGElement>>;
   export const Check: FC<SVGProps<SVGSVGElement>>;
   export const ChevronLeft: FC<SVGProps<SVGSVGElement>>;
+  export const ChevronUp: FC<SVGProps<SVGSVGElement>>;
   export const ChevronRight: FC<SVGProps<SVGSVGElement>>;
   export const Quote: FC<SVGProps<SVGSVGElement>>;
   export const Facebook: FC<SVGProps<SVGSVGElement>>;

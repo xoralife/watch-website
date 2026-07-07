@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import CartProvider from "@/components/CartProvider";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "LUXE | Premium Timepieces",
@@ -20,8 +22,11 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <CartProvider>
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1">
+            <PageTransition>{children}</PageTransition>
+          </main>
           <Footer />
+          <ScrollToTop />
         </CartProvider>
       </body>
     </html>
