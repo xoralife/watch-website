@@ -1,0 +1,12 @@
+feat: initialize Next.js project with TypeScript, Tailwind CSS, and Framer Motion
+
+Set up the core project foundation including:
+- package.json, tsconfig, next.config, postcss, tailwind config
+- Global CSS with luxury theme and custom animations
+- Product data with 8 watches and testimonials
+- TypeScript types for Product and CartItem
+- Cart context provider with localStorage persistence
+- Navbar with scroll effect, mobile menu, and cart badge
+- Root layout with font imports
+
+Co-authored-by: CommandCodeBot <noreply@commandcode.ai>
