@@ -9,6 +9,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import AnimatedCursor from "@/components/AnimatedCursor";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import JsonLd from "@/components/JsonLd";
+import ToastContainer from "@/components/ToastContainer";
 
 export const metadata: Metadata = {
   title: {
@@ -66,6 +67,7 @@ export default function RootLayout({
             </ErrorBoundary>
           </main>
           <Footer />
+          <ToastContainer />
           <ScrollToTop />
         </CartProvider>
       </body>
