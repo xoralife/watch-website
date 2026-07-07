@@ -17,6 +17,7 @@ import {
 import { products } from "@/data/products";
 import { useCart } from "@/components/CartProvider";
 import ProductCard from "@/components/ProductCard";
+import ImageZoom from "@/components/ImageZoom";
 
 export default function ProductDetail() {
   const params = useParams();
@@ -78,15 +79,10 @@ export default function ProductDetail() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative aspect-square rounded-2xl overflow-hidden glass mb-4">
-              <motion.img
-                key={selectedImage}
+            <div className="relative mb-4">
+              <ImageZoom
                 src={product.images[selectedImage]}
                 alt={product.name}
-                initial={{ opacity: 0, scale: 1.1 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4 }}
-                className="w-full h-full object-cover"
               />
               {product.badge && (
                 <div className="absolute top-4 left-4 z-10">
