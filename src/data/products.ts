@@ -420,4 +420,36 @@ export const testimonials = [
     rating: 4,
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100",
   },
+  {
+    name: "Alexander Weber",
+    role: "Investment Banker",
+    content:
+      "The Vintage Automatic is simply breathtaking. The hand-wound movement and exhibition caseback make it a conversation starter at every meeting.",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100",
+  },
+  {
+    name: "Maria Rodriguez",
+    role: "Luxury Retail Consultant",
+    content:
+      "LUXE has redefined online watch shopping. The presentation, the authenticity guarantees, and the customer service are all world-class.",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100",
+  },
+  {
+    name: "Kenji Nakamura",
+    role: "Horologist",
+    content:
+      "As someone who works with watches daily, I'm impressed by the curation. The Aero Pilot GMT's movement is beautifully finished at this price point.",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100",
+  },
+  {
+    name: "Olivia Thompson",
+    role: "Style Influencer",
+    content:
+      "The Elite Dress Quartz is my go-to for red carpets. It's elegant, slim, and catches the light beautifully. Received so many DMs asking about it!",
+    rating: 4,
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100",
+  },
 ];

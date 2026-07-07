@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { products } from "@/data/products";
+import { products, categories } from "@/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
@@ -17,5 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...productPages];
+  const categoryPages = categories.filter(c => c !== "All").map((c) => ({
+    url: `https://luxe-watches.com/category/${encodeURIComponent(c)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...productPages, ...categoryPages];
 }
