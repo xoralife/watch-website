@@ -7,6 +7,7 @@ import PageTransition from "@/components/PageTransition";
 import ScrollToTop from "@/components/ScrollToTop";
 import ScrollProgress from "@/components/ScrollProgress";
 import AnimatedCursor from "@/components/AnimatedCursor";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 export const metadata: Metadata = {
   title: {
@@ -58,7 +59,9 @@ export default function RootLayout({
           <ScrollProgress />
           <Navbar />
           <main className="flex-1">
-            <PageTransition>{children}</PageTransition>
+            <ErrorBoundary>
+              <PageTransition>{children}</PageTransition>
+            </ErrorBoundary>
           </main>
           <Footer />
           <ScrollToTop />
