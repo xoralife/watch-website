@@ -1,7 +1,8 @@
-feat: add page transitions, scroll-to-top button, and polish
+feat: add BrandShowcase, Newsletter, 404 page, polish homepage
 
-- PageTransition component with fade animation between routes
-- ScrollToTop button that appears on scroll
-- Integrated both into root layout
+- BrandShowcase section featuring Horizon, Vanguard, Heritage brands
+- Newsletter subscription section with animation
+- Custom 404 not-found page
+- Reorganized homepage layout
 
 Co-authored-by: CommandCodeBot <noreply@commandcode.ai>
