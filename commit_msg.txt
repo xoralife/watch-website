@@ -1,12 +1,11 @@
-feat: initialize Next.js project with TypeScript, Tailwind CSS, and Framer Motion
+feat: add core components - Hero, CartSidebar, ProductCard, FeaturedProducts, Features, Stats, Testimonials, Footer
 
-Set up the core project foundation including:
-- package.json, tsconfig, next.config, postcss, tailwind config
-- Global CSS with luxury theme and custom animations
-- Product data with 8 watches and testimonials
-- TypeScript types for Product and CartItem
-- Cart context provider with localStorage persistence
-- Navbar with scroll effect, mobile menu, and cart badge
-- Root layout with font imports
+Added major UI components:
+- Hero section with animated background and floating orbs
+- CartSidebar with slide-in animation and quantity controls
+- ProductCard with hover effects and wishlist button
+- Featured products grid with search, category filter, and sort
+- Features, Stats counters, and Testimonials carousel
+- Footer with links, categories, and newsletter form
 
 Co-authored-by: CommandCodeBot <noreply@commandcode.ai>
