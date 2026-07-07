@@ -43,4 +43,7 @@ declare module "lucide-react" {
   export const AlertTriangle: FC<SVGProps<SVGSVGElement>>;
   export const Info: FC<SVGProps<SVGSVGElement>>;
   export const CheckCircle: FC<SVGProps<SVGSVGElement>>;
+  export const Zap: FC<SVGProps<SVGSVGElement>>;
+  export const TrendingUp: FC<SVGProps<SVGSVGElement>>;
+  export const Eye: FC<SVGProps<SVGSVGElement>>;
 }
