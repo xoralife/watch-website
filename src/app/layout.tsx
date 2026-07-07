@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import ScrollProgress from "@/components/ScrollProgress";
 import AnimatedCursor from "@/components/AnimatedCursor";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: {
@@ -55,6 +56,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         <CartProvider>
+          <JsonLd />
           <AnimatedCursor />
           <ScrollProgress />
           <Navbar />
