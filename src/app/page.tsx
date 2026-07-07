@@ -7,6 +7,7 @@ import FeaturedProducts from "@/components/FeaturedProducts";
 import Stats from "@/components/Stats";
 import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
+import PaymentMethods from "@/components/PaymentMethods";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Stats />
       <Testimonials />
       <Newsletter />
+      <PaymentMethods />
     </>
   );
 }

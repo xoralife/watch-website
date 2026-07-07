@@ -35,4 +35,5 @@ declare module "lucide-react" {
   export const Send: FC<SVGProps<SVGSVGElement>>;
   export const Package: FC<SVGProps<SVGSVGElement>>;
   export const CreditCard: FC<SVGProps<SVGSVGElement>>;
+  export const Smartphone: FC<SVGProps<SVGSVGElement>>;
 }
